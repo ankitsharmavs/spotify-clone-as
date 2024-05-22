@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #121212;
+    font-family:  sans-serif;
+
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    padding: 24px;
+    background-color: black;
+}
+
+.sidebar .logo img {
+    width: 130px;
+}
+
+
+.sidebar .navigation ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.sidebar .navigation ul li {
+    padding: 10px 0px;
+}
+
+.sidebar .navigation a {
+    color: #b3b3b3;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.sidebar .navigation a:hover {
+    color: #f3f3f3;
+}
+
+ .Policies  {
+    position: absolute;
+    bottom: 100px;
+    
+}
+
+.Policies ul {
+    list-style: none;
+
+}
+
+.Policies ul li {
+    padding-bottom: 5px;
+    color: #b3b3b3;
+}
+
+.policies ul li a {
+    color: #b3b3b3;
+    list-style: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.Policies ul li:hover {
+    text-decoration: underline;
+}
+
+.main-container {
+    margin-left: 350px;
+    margin-bottom: 100px;
+    
+    
+}
+
+.main-container .topbar {
+    color: #b3b3b3;
+    
+   
+}
+
+.pre-next-button {
+    margin-right: 15px;
+    font-size:xx-large;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 14px 30px;
+}
+
+.topbar .navbar ul {
+    list-style: none;
+}
+
+.topbar .navbar {
+    display: flex;
+    align-items: center;
+}
+
+.topbar .navbar ul li {
+    display: inline-block;
+    margin: 0px 8px;
+    width: 70px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: #b3b3b3;
+    letter-spacing: 1px;
+}
+
+.topbar .navbar ul li a:hover {
+    color: white;
+    font-weight: bolder;
+    font-size:19 px;
+}
+
+.topbar .navbar button {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+    
+}
+
+.topbar .navbar button:hover{
+    background-color: grey;
+}
+
+.spotify-playlist {
+    padding: 20px 40px;
+     display: inline-block;
+     /* flex-wrap: wrap; */
+}
+
+.spotify-playlist h2 {
+    color: #b3b3b3;
+    margin-bottom: 20px;
+}
+
+.spotify-playlist .list {
+    display: flex ;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+ /* overflow: hidden; */
+   
+}
+
+.spotify-playlist .list .item {
+    min-width: 140px;
+    width: 25px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease-in 0.4s;
+    /* flex-wrap: wrap; */
+}
+
+.spotify-playlist .list .item img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.spotify-playlist .list .item:hover{
+    background-color: #252525;
+}
+
+.play {
+    background-color: #1db354;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 10px;
+    padding: 18px;
+    opacity: 0;
+    transition: all ease 0.6s;
+    
+}
+
+
+.play:hover{
+    transform: translatey(-60px);
+    opacity:1;
+}
+    
+.spotify-playlist .list .item h4 {
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    white-space: nowarp;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.spotify-playlist .list .item p {
+    color: #b3b3b3;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+
+.focus {
+    margin-top: 15px;
+}
+
+.sound {
+    margin-top: 15px;
+}
+
+.priview {
+position: fixed;
+bottom:0 ;
+height: 50px;
+left: 0;
+right: 0;
+background: linear-gradient( to right, #ae2896, #509bf5);
+padding: 15px  4px;
+display: flex;
+justify-content: space-between;
+
+}
+
+.priview h6 {
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.priview p {
+    color:#ffff;
+    font-size: 14px;
+    font-weight: 300px;
+    margin-top: 5px;
+}
+
+.priview button {
+    background-color: #ffff;
+    color:black;
+    border: 0;
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 14px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all ease 0.8s;
+}
+
+.priview button:hover {
+    background-color: #b3b3b3;
+}
